@@ -1,0 +1,27 @@
+.grids, .wait{
+    width: 96vw;
+    margin: 20px auto;
+    transition: 1s all;
+}
+
+.grids.hide{
+    opacity: 0;
+}
+
+.grid{
+    display: inline-block;
+    width: 4vw;
+    height: 4vw;
+    background-color:#FE9A2E ;
+    border-radius: 1vw;
+    border: 1px solid white;
+    transition: 1s all;
+    opacity: 0;
+}
+
+.grid.volum{
+    transition: 0.2s all;
+}
+.grid.show{
+    opacity: 1;
+}

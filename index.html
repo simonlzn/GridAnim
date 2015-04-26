@@ -1,75 +1,24 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title></title>
-        
-        <style>
-			html {
-				height: 100%;
-			}
-			
-            body {
-                height: 100%;
-				overflow: hidden;
-				margin: 0;
-            }
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
 
-            .logo {
-                background-image: url('/Chameleon/src/Chameleon.Web/Images/navigation/as24Logo.png');
-				background-repeat: no-repeat;								
-            }
-			
-			#background {
-				position: absolute;
-				background-color: red;
-				width: 100%;
-				height: 100%;
-				transition: 1s all;
-				z-index: 1;
-			}
-			
-			.start {
-				width: 100%;
-				height: 100%;
-				background-size: 20% 20%;
-				background-position: 40% 40%;
-				transition: 1s all;
-				z-index : 2;
-				position: absolute;
-			}
-			
-			.end {
-				background-size: 5% 5%;
-				background-position: 10% 5%;
-			}
-	
-			.head {
-				padding: 10%;
-			}
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="gridAnim.js"></script>
+    <script src="main.js"></script>
+</head>
 
-			.head .logo {
-				width : 10%;
-				height : 10%;
-			}
-        </style>
-		
-		<script>
-			window.onload = function () {
-				setTimeout(function(){
-					document.getElementById('logo').classList.add('end');
-					document.getElementById('background').style.opacity = '0';
-				}, 500);
-			}
-		</script>
-    </head>
+<body>
+<div id="background"></div>
+<div id="logo" class="logo start"></div>
 
-    <body>
-        <div id="background"></div>
-		<div id="logo" class="logo start"></div>
-		
-		<div class="head">
-			<div class="logo"></div>
-		</div>
-		
-    </body>
+<div class="head">
+    <div class="slogan">Welcome to AI Home!</div>
+</div>
+
+<div class="grids"></div>
+
+<div class="loading"></div>
+
+</body>
 </html>
